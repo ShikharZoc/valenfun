@@ -1,38 +1,51 @@
 .App {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/*Background*/
+body{
+  margin: 0;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  background-color: #ffe6ee;
+  background-image: url("https://media.istockphoto.com/id/1080854888/vector/seamless-pink-texture-with-scattered-hearts-valentines-day-backdrop-vector-illustration.jpg?s=612x612&w=0&k=20&c=kRqmJqTeIj8RJ4Lf2sfmckm72M2eLnp7w-S6KH1D0es=");
+  background-repeat: repeat;
+}
+
+
+/*card style for each page*/
+.card{
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  max-width: 420px;
+  width: 90%;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+button{
+  background-color: #ff4d6d;
   color: white;
+  border: none;
+  padding: 12px 22px;
+  margin-top: 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover{
+  background-color: #ff1f4b;
+  transform:scale(1.05);
 }

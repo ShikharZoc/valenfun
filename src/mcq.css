@@ -1,0 +1,124 @@
+/* ===== GLOBAL RESET + FULL SCREEN BACKGROUND ===== */
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #1b1f4b, #000814);
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== MAIN CONTAINER ===== */
+
+.mcq-container {
+  position: fixed;       /* THIS is the key */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background: radial-gradient(circle at center, #1b1f4b, #000814);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-family: "Poppins", sans-serif;
+  z-index: 999;          /* ensures it's above App background */
+}
+
+/* ===== SHOW LOGO ===== */
+
+.show-logo {
+  width: 180px;
+  margin-bottom: 25px;
+  filter: drop-shadow(0 0 10px #00b4ff);
+}
+
+/* ===== QUESTION BOX ===== */
+
+.question-box {
+  background: linear-gradient(145deg, #001f54, #003566);
+  padding: 20px 50px;
+  border-radius: 50px;
+  border: 3px solid #00b4ff;
+  box-shadow: 0 0 25px #00b4ff;
+  margin-bottom: 50px;
+}
+
+.question-box h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+/* ===== OPTIONS GRID ===== */
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* ===== OPTION BUTTONS ===== */
+
+.option {
+  background: linear-gradient(145deg, #001f54, #003566);
+  color: white;
+  border: 2px solid #00b4ff;
+  padding: 18px;
+  font-size: 1rem;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 180, 255, 0.4);
+}
+
+/* Hover effect */
+.option:hover {
+  background: #005f99;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00b4ff;
+}
+
+/* ===== CORRECT ANSWER ===== */
+
+.correct {
+  background: #00c853 !important;
+  border-color: #00ff95;
+  box-shadow: 0 0 20px #00ff95;
+  color: white;
+}
+
+/* ===== WRONG ANSWER ===== */
+
+.wrong {
+  background: #d00000 !important;
+  border-color: #ff4d4d;
+  box-shadow: 0 0 20px #ff4d4d;
+  color: white;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 600px) {
+  .options {
+    grid-template-columns: 1fr;
+  }
+
+  .question-box {
+    padding: 15px 25px;
+  }
+
+  .question-box h2 {
+    font-size: 1.4rem;
+  }
+
+  .show-logo {
+    width: 140px;
+  }
+}
