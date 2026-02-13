@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/valenfun/static/css/main.9a0198f6.css",
+    "main.js": "/valenfun/static/js/main.6fc20aca.js",
+    "static/js/453.fff780fa.chunk.js": "/valenfun/static/js/453.fff780fa.chunk.js",
+    "static/media/logo.png": "/valenfun/static/media/logo.12703ca0d743ea225cd9.png",
+    "static/media/us.jpeg": "/valenfun/static/media/us.03dafefc6367b7088c0a.jpeg",
+    "static/media/cutie.gif": "/valenfun/static/media/cutie.f44c4788c6d8723e01e0.gif",
+    "index.html": "/valenfun/index.html",
+    "main.9a0198f6.css.map": "/valenfun/static/css/main.9a0198f6.css.map",
+    "main.6fc20aca.js.map": "/valenfun/static/js/main.6fc20aca.js.map",
+    "453.fff780fa.chunk.js.map": "/valenfun/static/js/453.fff780fa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a0198f6.css",
+    "static/js/main.6fc20aca.js"
+  ]
+}
