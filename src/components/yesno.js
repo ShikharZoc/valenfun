@@ -39,8 +39,9 @@ function Yesno({ onYes }){
         <button className="yes-btn" onClick={onYes}>YES</button>
 
         <button
-          className={`no-btn ${hasMoved ? "absolute" : ""}`}
+          className={`no-btn ${hasMoved ? "absolute": ""}`}
           onMouseEnter={moveNoButton}
+          onTouchStart={moveNoButton}
           style={
             hasMoved
               ? {

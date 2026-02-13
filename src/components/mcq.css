@@ -11,11 +11,10 @@ body {
 /* ===== MAIN CONTAINER ===== */
 
 .mcq-container {
-  position: fixed;       /* THIS is the key */
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  padding: 30px 20px;
+  box-sizing: border-box;
 
   background: radial-gradient(circle at center, #1b1f4b, #000814);
 
@@ -26,7 +25,6 @@ body {
 
   color: white;
   font-family: "Poppins", sans-serif;
-  z-index: 999;          /* ensures it's above App background */
 }
 
 /* ===== SHOW LOGO ===== */
@@ -106,20 +104,34 @@ body {
 /* ===== MOBILE RESPONSIVE ===== */
 
 @media (max-width: 600px) {
+
+  .mcq-container {
+    justify-content: flex-start;
+    padding-top: 40px;
+  }
+
   .options {
     grid-template-columns: 1fr;
+    gap: 18px;
   }
 
   .question-box {
-    padding: 15px 25px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
   }
 
   .question-box h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    text-align: center;
   }
 
   .show-logo {
     width: 140px;
+  }
+
+  .option {
+    font-size: 0.95rem;
+    padding: 16px;
   }
 }
 
@@ -212,4 +224,11 @@ body {
   font-size: 1rem;
   cursor: pointer;
   font-weight: bold;
+}
+
+/* Modern mobile viewport fix */
+@supports (height: 100dvh) {
+  .mcq-container {
+    min-height: 100dvh;
+  }
 }
