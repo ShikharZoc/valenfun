@@ -73,3 +73,9 @@
   cursor: pointer;
   transition: 0.2s ease;
 }
+
+.yesno-logo {
+  width: 180px;
+  margin-bottom: 25px;
+  filter: drop-shadow(0 0 12px #ff69b4);
+}

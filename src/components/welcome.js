@@ -1,8 +1,8 @@
 function Welcome({ onContinue }) {
     return (
         <div className="card">
-            <h1>Hey &lt;3 </h1>
-            <p> Welcome welcome welcome! Swagat cha!!</p>
+            <h1> ❤️❤️ </h1>
+            <p> Welcome welcome welcome! Mero Possible Forever!!</p>
 
         <button onClick={onContinue}>
             Continue
